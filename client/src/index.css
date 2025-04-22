@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* If you want to keep some of your custom styles, you can add them below */
+body {
+  margin: 0;
+  min-height: 100vh;
+}
