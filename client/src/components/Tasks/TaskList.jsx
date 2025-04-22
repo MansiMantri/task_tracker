@@ -45,6 +45,7 @@ const TaskList = () => {
           <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
             Task Dashboard
           </h2>
+         
           <RoleGate allowed={['submitter']}>
             <button
               onClick={() => setShowForm(!showForm)}
@@ -54,7 +55,7 @@ const TaskList = () => {
             </button>
           </RoleGate>
         </div>
-        <TaskFilter />
+        {isSubmitter && <TaskFilter />}
         {showForm && (
           <RoleGate allowed={['submitter']}>
             <div className="mt-6">
@@ -63,6 +64,8 @@ const TaskList = () => {
           </RoleGate>
         )}
       </div>
+      
+
 
       {/* Submitter: show normal list */}
       <RoleGate allowed={['submitter']}>
