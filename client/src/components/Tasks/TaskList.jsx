@@ -11,7 +11,7 @@ const STATUSES = ['pending', 'approved', 'rejected','done'];
 
 const TaskList = () => {
   const { currentUser } = useAuth();
-  const { tasks, updateTask, filteredTasks } = useTasks(); // <-- add filteredTasks here
+  const { tasks, updateTask, filteredTasks } = useTasks(); 
   const [showForm, setShowForm] = useState(false);
 
   const isSubmitter = currentUser.role === 'submitter';
@@ -35,7 +35,7 @@ const TaskList = () => {
     if (source.droppableId !== destination.droppableId) {
       updateTask(draggableId, { status: destination.droppableId });
     }
-    // Optionally, handle reordering within the same column if needed
+    
   };
 
   return (

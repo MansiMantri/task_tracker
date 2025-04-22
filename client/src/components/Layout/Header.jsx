@@ -1,37 +1,3 @@
-// import { useAuth } from '../../context/AuthContext';
-
-// const Header = () => {
-//   const { currentUser, logout } = useAuth();
-
-//   return (
-//     <header className="bg-blue-600 text-white shadow-md">
-//       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-//         <h1 className="text-xl font-bold">Task Tracker</h1>
-        
-//         {currentUser && (
-//           <div className="flex items-center space-x-4">
-//             <div className="text-sm">
-//               <span>Logged in as: </span>
-//               <span className="font-semibold">{currentUser.name}</span>
-//               <span className="ml-2 px-2 py-1 bg-blue-700 rounded-full text-xs">
-//                 {currentUser.role}
-//               </span>
-//             </div>
-            
-//             <button
-//               onClick={logout}
-//               className="bg-blue-700 hover:bg-blue-800 px-3 py-1 rounded text-sm transition-colors"
-//             >
-//               Logout
-//             </button>
-//           </div>
-//         )}
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Header;
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 

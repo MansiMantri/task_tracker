@@ -43,5 +43,5 @@ export const storeTasks = (tasks) => {
 export const clearStorage = () => {
   localStorage.removeItem('tasks');
   localStorage.removeItem('currentUser');
-  // Don't remove users to keep the mock accounts
+ 
 };
